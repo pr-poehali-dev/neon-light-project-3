@@ -66,7 +66,7 @@ export function DashboardMockup() {
         <div className="p-3 border-b border-zinc-800/50">
           <div className="flex items-center gap-2 px-2 py-1.5">
             <CirclePower className="w-5 h-5 text-white" />
-            <span className="text-white font-semibold text-sm">Orbit</span>
+            <span className="text-white font-semibold text-sm">Директолог</span>
             <ChevronDown className="w-3.5 h-3.5 text-zinc-500 ml-auto" />
           </div>
         </div>
@@ -82,8 +82,8 @@ export function DashboardMockup() {
 
         {/* Main nav */}
         <div className="px-3 space-y-0.5">
-          <NavItem icon={Inbox} label="Входящие" badge={3} active />
-          <NavItem icon={CircleUser} label="Мои задачи" />
+          <NavItem icon={Inbox} label="Уведомления" badge={3} active />
+          <NavItem icon={CircleUser} label="Мой кабинет" />
         </div>
 
         {/* Workspace section */}
@@ -92,10 +92,10 @@ export function DashboardMockup() {
             Пространство
           </div>
           <div className="space-y-0.5 mt-1">
-            <NavItem icon={Layers} label="Инициативы" hasSubmenu />
-            <NavItem icon={FolderKanban} label="Проекты" hasSubmenu />
-            <NavItem icon={LayoutGrid} label="Представления" hasSubmenu />
-            <NavItem icon={Users} label="Команды" hasSubmenu />
+            <NavItem icon={Layers} label="Кампании" hasSubmenu />
+            <NavItem icon={FolderKanban} label="Ключевые слова" hasSubmenu />
+            <NavItem icon={LayoutGrid} label="Метрики" hasSubmenu />
+            <NavItem icon={Users} label="Аудитории" hasSubmenu />
           </div>
         </div>
 
@@ -105,9 +105,9 @@ export function DashboardMockup() {
             Избранное
           </div>
           <div className="space-y-0.5 mt-1">
-            <NavItem icon={Smartphone} label="Мобильное приложение" color="text-blue-400" />
-            <NavItem icon={Map} label="Роадмап Q1" color="text-orange-400" />
-            <NavItem icon={FileText} label="API Документация" color="text-emerald-400" />
+            <NavItem icon={Smartphone} label="Поиск — Москва" color="text-blue-400" />
+            <NavItem icon={Map} label="РСЯ — Ретаргетинг" color="text-orange-400" />
+            <NavItem icon={FileText} label="Смарт-баннеры" color="text-emerald-400" />
           </div>
         </div>
 
@@ -117,8 +117,8 @@ export function DashboardMockup() {
             Ваши команды
           </div>
           <div className="space-y-0.5 mt-1">
-            <NavItem icon={Sparkles} label="Продукт" hasSubmenu />
-            <NavItem icon={Settings} label="Разработка" hasSubmenu />
+            <NavItem icon={Sparkles} label="Аналитика" hasSubmenu />
+            <NavItem icon={Settings} label="Настройки" hasSubmenu />
           </div>
         </div>
 
@@ -134,7 +134,7 @@ export function DashboardMockup() {
         variants={panelVariants}
       >
         <div className="px-4 py-3 border-b border-zinc-800/50 flex items-center justify-between">
-          <h3 className="text-white font-semibold text-sm">Входящие</h3>
+          <h3 className="text-white font-semibold text-sm">Уведомления</h3>
           <div className="flex items-center gap-2">
             <button className="text-zinc-500 hover:text-white transition-colors">
               <Plus className="w-4 h-4" />
@@ -144,67 +144,66 @@ export function DashboardMockup() {
 
         <div className="flex-1 overflow-auto scrollbar-hide">
           <InboxItem
-            id="ENG-135"
-            title="Рефакторинг краулера"
-            subtitle="nan назначил вам"
+            id="CPL-01"
+            title="CPL вырос на 34%"
+            subtitle="Поиск — Москва и область"
             time="2ч"
             avatar="https://i.pravatar.cc/32?img=1"
-            status="in-progress"
+            status="bug"
             active
           />
           <InboxItem
-            id="LLM"
-            title="LLM Чат-бот"
-            subtitle="Обновление проекта от raissa"
-            time="1д"
+            id="CTR-02"
+            title="CTR упал ниже 3%"
+            subtitle="Смарт-баннеры — Россия"
+            time="5ч"
             avatar="https://i.pravatar.cc/32?img=2"
-            status="todo"
-            isProject
+            status="in-progress"
           />
           <InboxItem
-            id="ENG-159"
-            title="Ошибка загрузки изображений"
-            subtitle="SLA нарушен"
-            time="2д"
+            id="BDG-03"
+            title="Бюджет израсходован на 80%"
+            subtitle="РСЯ — Ретаргетинг"
+            time="1д"
             avatar="https://i.pravatar.cc/32?img=3"
-            status="bug"
-          />
-          <InboxItem
-            id="DES-498"
-            title="Редизайн настроек..."
-            subtitle="karri упомянул вас"
-            time="4ч"
-            avatar="https://i.pravatar.cc/32?img=4"
             status="todo"
           />
           <InboxItem
-            id="ENG-160"
-            title="Движок Holtzmann сломан"
-            subtitle="Вы просили напомнить"
-            time="1н"
-            avatar="https://i.pravatar.cc/32?img=5"
+            id="KW-04"
+            title="Нецелевые ключи выявлены"
+            subtitle="38 фраз с нулевой конверсией"
+            time="1д"
+            avatar="https://i.pravatar.cc/32?img=4"
             status="bug"
           />
           <InboxItem
-            title="Эксперименты с регистрацией"
-            subtitle="Добавлен в проект"
+            id="OPT-05"
+            title="Оптимизация применена"
+            subtitle="Минус-слова добавлены автоматически"
+            time="2д"
+            avatar="https://i.pravatar.cc/32?img=5"
+            status="done"
+          />
+          <InboxItem
+            title="Еженедельный отчёт готов"
+            subtitle="Сводка за 11–17 апреля"
             avatar="https://i.pravatar.cc/32?img=6"
             status="done"
             isProject
           />
           <InboxItem
-            id="MKT-122"
-            title="Ассеты для маркетинга"
-            subtitle="erin отметил как Дубликат"
-            time="1н"
+            id="AUD-06"
+            title="Новая аудитория обнаружена"
+            subtitle="Похожие пользователи — +23% конверсии"
+            time="3д"
             avatar="https://i.pravatar.cc/32?img=7"
-            status="done"
+            status="todo"
           />
           <InboxItem
-            title="Главная страница v3"
-            subtitle="Обновление проекта от paco"
+            title="Автостратегия настроена"
+            subtitle="Целевая CPA: 850 ₽"
             avatar="https://i.pravatar.cc/32?img=8"
-            status="todo"
+            status="done"
             isProject
           />
         </div>
@@ -215,59 +214,57 @@ export function DashboardMockup() {
         {/* Header breadcrumb */}
         <div className="px-5 py-3 border-b border-zinc-800/50 flex items-center justify-between shrink-0">
           <div className="flex items-center gap-1.5 text-xs">
-            <span className="text-zinc-500">Разработка</span>
+            <span className="text-zinc-500">Директ</span>
             <span className="text-zinc-600">›</span>
-            <span className="text-emerald-400">Spice harvester</span>
+            <span className="text-emerald-400">Поиск — Москва</span>
             <span className="text-zinc-600">›</span>
-            <span className="text-zinc-300">ENG-135</span>
+            <span className="text-zinc-300">CPL-01</span>
           </div>
           <MoreHorizontal className="w-4 h-4 text-zinc-500" />
         </div>
 
         {/* Content */}
         <div className="flex-1 p-5 overflow-auto scrollbar-hide">
-          <h2 className="text-white text-xl font-semibold mb-5">Рефакторинг краулера</h2>
+          <h2 className="text-white text-xl font-semibold mb-5">CPL вырос на 34%</h2>
 
-          {/* Code block */}
+          {/* Analysis block */}
           <div className="bg-zinc-900/80 rounded-lg p-4 text-[11px] font-mono mb-5 border border-zinc-800/50">
             <div className="space-y-2">
               <div>
-                <span className="text-zinc-500">Комментарий.</span>
-                <span className="text-amber-300">documentContent</span>
-                <span className="text-zinc-400"> определен неверно. Должен быть </span>
-                <span className="text-cyan-300">LazyManyToOne</span>
-                <span className="text-zinc-400"> связью.</span>
+                <span className="text-zinc-500">Анализ.</span>
+                <span className="text-amber-300">Поиск — Москва</span>
+                <span className="text-zinc-400"> показывает рост CPL за 7 дней. Причина: </span>
+                <span className="text-cyan-300">нецелевые показы</span>
+                <span className="text-zinc-400"> по широким фразам.</span>
               </div>
               <div className="mt-3 text-zinc-600">
-                {/* The document content that this comment is associated with. */}
+                {/* Рекомендации Директолога */}
               </div>
               <div>
-                <span className="text-purple-400">@ManyToOne</span>
+                <span className="text-purple-400">@Рекомендация</span>
                 <span className="text-zinc-400">(</span>
-                <span className="text-cyan-300">DocumentContent</span>
+                <span className="text-cyan-300">Минус-слова</span>
                 <span className="text-zinc-400">,</span>
-                <span className="text-amber-300">comments</span>
-                <span className="text-zinc-400">,</span>
-                <span className="text-amber-300">cascade</span>
+                <span className="text-amber-300">фраз</span>
                 <span className="text-zinc-400">:</span>
-                <span className="text-orange-300">true</span>
+                <span className="text-orange-300">38</span>
                 <span className="text-zinc-400">,</span>
-                <span className="text-amber-300">nullable</span>
+                <span className="text-amber-300">приоритет</span>
                 <span className="text-zinc-400">:</span>
-                <span className="text-orange-300">false</span>
+                <span className="text-orange-300">"высокий"</span>
                 <span className="text-zinc-400">)</span>
               </div>
               <div>
-                <span className="text-blue-400">public </span>
-                <span className="text-amber-300">documentContent</span>
-                <span className="text-zinc-400">?: </span>
-                <span className="text-cyan-300">DocumentContent</span>
+                <span className="text-blue-400">экономия: </span>
+                <span className="text-amber-300">~12 000 ₽</span>
+                <span className="text-zinc-400">/мес при </span>
+                <span className="text-cyan-300">текущем бюджете</span>
                 <span className="text-zinc-400">;</span>
               </div>
               <div className="mt-3 text-zinc-400">
-                Тогда мы будем обращаться к
-                <span className="text-emerald-400">CachedPromise&lt;DocumentContent&gt;</span>
-                , и контент документа будет гидратирован.
+                После применения рекомендации
+                <span className="text-emerald-400">CPL снизится до целевого</span>
+                , конверсия вырастет на 15–20%.
               </div>
             </div>
           </div>
@@ -276,18 +273,18 @@ export function DashboardMockup() {
           <div className="space-y-2 text-sm mb-5">
             <div className="flex items-center gap-2 text-zinc-500 hover:text-zinc-300 cursor-pointer transition-colors">
               <Plus className="w-4 h-4" />
-              <span>Добавить подзадачи</span>
+              <span>Применить рекомендацию</span>
             </div>
             <div className="flex items-center gap-2 text-zinc-500 hover:text-zinc-300 cursor-pointer transition-colors">
               <Link2 className="w-4 h-4" />
-              <span>Ссылки</span>
+              <span>Открыть в Директе</span>
             </div>
           </div>
 
-          {/* PR reference */}
+          {/* Campaign reference */}
           <div className="text-xs text-zinc-500 mb-5">
-            <span className="text-zinc-600">#20319</span>
-            <span> igor/eng-135 add source to insights slice and segment</span>
+            <span className="text-zinc-600">#CPL-01</span>
+            <span> Поиск — Москва → кластер «широкие фразы» → 38 минус-слов</span>
           </div>
 
           {/* Activity */}
@@ -296,18 +293,18 @@ export function DashboardMockup() {
             <div className="space-y-3">
               <ActivityItem
                 avatar="https://i.pravatar.cc/24?img=1"
-                name="nan"
-                action="переместил из"
-                from="Бэклог"
-                to="В работе"
-                time="5 месяцев назад"
+                name="Директолог"
+                action="выявил аномалию:"
+                from="CPL вырос"
+                to="+34%"
+                time="2 часа назад"
               />
               <ActivityItem
                 avatar="https://i.pravatar.cc/24?img=2"
-                name="alex"
-                action="прокомментировал"
-                from="эту задачу"
-                time="5 месяцев назад"
+                name="Система"
+                action="добавила рекомендацию"
+                from="минус-слова"
+                time="2 часа назад"
               />
             </div>
           </div>

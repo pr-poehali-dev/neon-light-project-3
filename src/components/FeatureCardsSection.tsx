@@ -3,7 +3,7 @@ import { ChevronRight, Plus } from "lucide-react"
 
 const featureCards = [
   {
-    title: "Планирование спринтов",
+    title: "Анализ рекламных кампаний",
     illustration: (
       <div className="relative w-full h-full flex items-center justify-center overflow-hidden rounded-lg">
         <svg
@@ -51,7 +51,7 @@ const featureCards = [
     ),
   },
   {
-    title: "Управление итерациями",
+    title: "Динамика трафика и конверсий",
     illustration: (
       <div className="relative w-full h-full flex items-center justify-center overflow-hidden">
         <img
@@ -64,7 +64,7 @@ const featureCards = [
     ),
   },
   {
-    title: "Когда важна точность",
+    title: "Точные советы без воды",
     illustration: (
       <div className="relative w-full h-full flex items-center justify-center overflow-hidden">
         <img
@@ -105,7 +105,7 @@ export function FeatureCardsSection() {
                 lineHeight: 1.1,
               }}
             >
-              Создан для современных команд
+              Создан для предпринимателей и маркетологов
             </motion.h2>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -115,10 +115,10 @@ export function FeatureCardsSection() {
               className="max-w-md"
             >
               <p className="text-zinc-400 leading-relaxed">
-                Orbit основан на практиках и принципах, которые отличают лучшие продуктовые команды:
-                фокус на главном, быстрое исполнение и внимание к качеству.{" "}
-                <a href="#" className="text-white inline-flex items-center gap-1 hover:underline">
-                  Перейти на Orbit <ChevronRight className="w-4 h-4" />
+                Директолог построен на реальных данных вашего кабинета: анализирует, выявляет потери
+                и даёт чёткие рекомендации — без лишнего жаргона.{" "}
+                <a href="https://t.me/" className="text-white inline-flex items-center gap-1 hover:underline">
+                  Попробовать бесплатно <ChevronRight className="w-4 h-4" />
                 </a>
               </p>
             </motion.div>

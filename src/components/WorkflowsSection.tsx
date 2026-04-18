@@ -4,50 +4,50 @@ import { ChevronLeft, ChevronRight, Plus, ArrowRight, MessageSquare, GitBranch, 
 const carouselCards = [
   {
     id: 1,
-    category: "Запросы клиентов",
-    title: "Создавайте то, что нужно клиентам",
+    category: "Ежедневный мониторинг",
+    title: "Бот сам присылает сводку каждое утро",
     icon: ArrowRight,
     mockup: "intercom",
   },
   {
     id: 2,
-    category: "Git-интеграция",
-    title: "Автоматизируйте PR и коммиты",
+    category: "Анализ кампаний",
+    title: "Находит кампании, которые сливают бюджет",
     icon: Plus,
     mockup: "github",
   },
   {
     id: 3,
-    category: "Orbit Mobile",
-    title: "Управляйте работой откуда угодно",
+    category: "Telegram-уведомления",
+    title: "Управляйте рекламой прямо из чата",
     icon: ArrowRight,
     mockup: "mobile",
   },
   {
     id: 4,
-    category: "Orbit Asks",
-    title: "Превращайте запросы в задачи",
+    category: "Аномалии и просадки",
+    title: "Мгновенно сигнализирует о падении трафика",
     icon: ArrowRight,
     mockup: "asks",
   },
   {
     id: 5,
-    category: "Интеграции Orbit",
-    title: "100+ способов расширить возможности",
+    category: "Интеграции",
+    title: "Подключается к Метрике и Директу за 2 минуты",
     icon: ArrowRight,
     mockup: "integrations",
   },
   {
     id: 6,
-    category: "Интеграция с Figma",
-    title: "Связь между разработкой и дизайном",
+    category: "Недельные отчёты",
+    title: "Сводный PDF-отчёт по итогам недели",
     icon: ArrowRight,
     mockup: "figma",
   },
   {
     id: 7,
-    category: "Для разработчиков",
-    title: "Создавайте плагины через Orbit API",
+    category: "API-доступ",
+    title: "Подключайте собственные источники данных",
     icon: ArrowRight,
     mockup: "api",
   },
@@ -243,22 +243,22 @@ export function WorkflowsSection() {
             {/* Orange indicator */}
             <div className="flex items-center gap-2 mb-6">
               <div className="w-2 h-2 rounded-full bg-orange-500" />
-              <span className="text-sm text-zinc-400">Процессы и интеграции</span>
+              <span className="text-sm text-zinc-400">Возможности и интеграции</span>
               <ChevronRight className="w-4 h-4 text-zinc-600" />
             </div>
 
             {/* Heading */}
             <h2 className="text-4xl md:text-5xl font-medium text-white leading-[1.1]">
-              Работайте слаженно
+              Всё под контролем
               <br />
-              между инструментами
+              прямо в Telegram
             </h2>
           </div>
 
           {/* Description */}
           <p className="text-zinc-400 lg:max-w-sm lg:pt-12">
-            Расширьте возможности Orbit с помощью интеграций, которые синхронизируют всю команду и держат фокус на
-            главном.
+            Директолог работает там, где вы уже есть — в Telegram. Подключите один раз и получайте аналитику без лишних
+            действий.
           </p>
         </div>
 
